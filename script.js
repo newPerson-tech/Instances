@@ -27,7 +27,7 @@ class Car {
     }
 
     printInfo() {
-        console.log(`Brand: ${this.brand}, Model: ${this.model}, Age: ${this.year}, Number plate: ${this.licensePlate}`);
+        console.log(`Brand: ${this.brand}, Model: ${this.model}, Year: ${this.year}, Number plate: ${this.licensePlate}`);
         if (this.owner) {
             console.log("Owner:");
             this.owner.printInfo();
@@ -48,5 +48,5 @@ const car2 = new Car("Honda", "Civic", 2020, "BB5678CD");
 car1.setOwner(human1);
 car2.setOwner(human2);
 
-car1.printInfo();
-car2.printInfo();
+console.log(car1.printInfo());
+console.log(car2.printInfo());
